@@ -1,4 +1,5 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
+from db import Driver, Client, Order
 
 app = Flask(__name__)
 
@@ -10,7 +11,8 @@ def hi():
 
 @app.route("/drivers", methods=["POST"])
 def post_drivers():
-    return jsonify()
+    content = request.get_json()
+    return jsonify(content)
 
 
 if __name__ == "__main__":

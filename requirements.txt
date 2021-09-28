@@ -8,3 +8,4 @@ mypy-extensions==0.4.3
 mypy==0.910
 vulture==2.3
 flask==2.0.1
+sqlalchemy==1.4.25
